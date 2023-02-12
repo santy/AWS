@@ -29,3 +29,4 @@ systemctl start httpd
 cd /var/www/html
 wget  https://us-west-2-tcprod.s3.amazonaws.com/courses/ILT-TF-200-ARCHIT/v7.2.5.prod-e7ae97e5/lab-2-VPC/scripts/instanceData.zip
 unzip instanceData.zip
+

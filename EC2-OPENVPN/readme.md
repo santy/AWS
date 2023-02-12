@@ -20,6 +20,10 @@ Edit subnet associations
 * Select the subnets
 
 # To connect to your EC2 instance and install the Apache web server with PHP
+$ yum updat
+$ fdsfsad
+
+
 
 $ yum update
 $ amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2

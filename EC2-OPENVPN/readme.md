@@ -55,4 +55,8 @@ echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/as-repository.asc] http:/
 
 apt update && apt -y install openvpn-as
 
+Access Server Web UIs are available here:
+Admin  UI: https://10.0.2.50:943/admin
+Client UI: https://10.0.2.50:943/
+To login please use the "openvpn" account with "TSct7X4VptkG" password.
 

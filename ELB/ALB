@@ -1,6 +1,14 @@
+Lanzar 2 isntancias con este código y gurpo de seguridad de momento con http open
+
 #!/bin/bash
 yum update -y
 yum install -y httpd
 systemctl start httpd.service
 systemctl enable httpd.service
 echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+
+Crear el balanceador de carga con grupo de seguridad que tenga abierto puerto http
+
+Crear el target group con las dos instancias, ojo al añadirlas, comprobar que se han añadido
+
+Cerrar en el grupo de seguridad de las instancias el puerto 80 y permitir trafico del balanceador

@@ -2,6 +2,7 @@ Ojo con script, pasar por bloc de notas
 
 Añadir instance al rol de LabInstaceProfile
 
+
 #!/bin/bash
 yum update -y
 amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2

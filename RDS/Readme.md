@@ -8,6 +8,7 @@ systemctl enable httpd.service
 systemctl start httpd
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
+sudo chmod 777 /var/www/html
 cd /var/www/html
 wget https://santy.cierco.es/inventory.zip
 unzip inventory.zip

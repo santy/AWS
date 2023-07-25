@@ -1,7 +1,3 @@
-Ojo con script, pasar por bloc de notas
-
-Añadir instance al rol de LabInstaceProfile
-
 
 #!/bin/bash
 yum update -y
@@ -16,3 +12,9 @@ chmod 777 /var/www/html
 cd /var/www/html
 wget https://santy.cierco.es/inventory.zip
 unzip inventory.zip
+
+Ojo con script, pasar por bloc de notas
+
+Añadir instance al rol de LabInstaceProfile
+
+

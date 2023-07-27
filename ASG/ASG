@@ -1,0 +1,9 @@
+Crear AutoScaling Group y Plantilla de lanzamiento
+
+Ojo al crear la plantilla de lanzamiento, elegir la VPC y Subred del ALB
+
+Seleccionar Healthy Check ELB y OK
+
+Comprobar en ASG la Actividad y Instance Management
+
+Editar Auto Group y cambiar el número de instancias

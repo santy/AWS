@@ -1,0 +1,12 @@
+Creamos VPC 10.0.0.0/8
+Creamos Internet Gateway y adjuntamos a la VPC Creada
+Creamos las diferentes subnets 10.0.1.0/16 y 10.0.2.0/16
+Creamos 2 Router Tables (Public Router y Private Router)
+-Editamos Public Router Table para aceptar conexiones 0.0.0.0 a InternetGateway
+-Dejamos Private Router como esta
+Asociamos las subnets que hemos creado al Router Table
+Lanzamos las instancias
+Con esto ya deberiamos tener conexión a la Instancia Publica
+Conectamos desde la instancia publica a la instancia privada (abrir ICMP Security Group Instancia Privada) permisos 400 archivo pem
+Creamos el NAT Gateway
+Editamos Private Router Table para aceptar conexiones 0.0.0.0 al nat gateway

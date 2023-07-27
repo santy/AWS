@@ -7,7 +7,7 @@ systemctl start httpd.service
 systemctl enable httpd.service
 echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 
-Crear el balanceador de carga con grupo de seguridad que tenga abierto puerto http
+Crear el balanceador de carga con grupo de seguridad que tenga abierto puerto http, ojo zona disponibilidad y subred.
 
 Crear el target group con las dos instancias, ojo al añadirlas, comprobar que se han añadido
 

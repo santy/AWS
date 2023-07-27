@@ -11,4 +11,4 @@ Crear el balanceador de carga con grupo de seguridad que tenga abierto puerto ht
 
 Crear el target group con las dos instancias, ojo al añadirlas, comprobar que se han añadido
 
-Cerrar en el grupo de seguridad de las instancias el puerto 80 y permitir trafico del balanceador
+Cerrar en el grupo de seguridad de las instancias el puerto 80 y permitir trafico del grupo de seguridad del balanceador

@@ -7,3 +7,18 @@ Seleccionar Healthy Check ELB y OK
 Comprobar en ASG la Actividad y Instance Management
 
 Editar Auto Group y cambiar el número de instancias
+
+
+Ampliar probando CPU
+
+En el AutoScaling Group que hemos creado vamos a "Autocatic Scaling" y "Create Dinamic Scaling Policy"
+
+Seleccionamos Target Tracking Scling y Average CPU Utilization
+
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
+stress -c 4 //llevamos al 100% la cpu de la maquina
+
+
+
+

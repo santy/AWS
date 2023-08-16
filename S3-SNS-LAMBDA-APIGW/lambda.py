@@ -39,7 +39,7 @@ def lambda_handler(event, context):
         )
         
         #Send email to HR
-        topic_arn = 'arn:aws:sns:eu-west-1:333984217794:S3-CV-SNS' ############MODIFICAR ARN##############
+        topic_arn = 'arn:aws:sns:eu-west-1:333984217794:S3-CV-SNS' ############MODIFICAR ARN###############
         message = 'Una solicitud de trabajo se ha enviado. Por favor revisa el C.V. en el bucket.'
         client.publish(TopicArn=topic_arn,Message=message)
 # on upload success

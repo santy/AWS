@@ -35,11 +35,11 @@ def lambda_handler(event, context):
         #file_name = json.loads(multipart_content["Metadata"])["filename"]
         # u uploading file to S3
         s3_upload = s3.put_object(
-            Bucket="sanvalero-static-webs", Key=file_name, Body=multipart_content["file"]
+            Bucket="#######NOMBRE DEL BUCKET######", Key=file_name, Body=multipart_content["file"]
         )
         
         #Send email to HR
-        topic_arn = 'arn:aws:sns:eu-west-1:333984217794:S3-CV-SNS'
+        topic_arn = 'arn:aws:sns:eu-west-1:333984217794:S3-CV-SNS' ############MODIFICAR ARN##############
         message = 'Una solicitud de trabajo se ha enviado. Por favor revisa el C.V. en el bucket.'
         client.publish(TopicArn=topic_arn,Message=message)
 # on upload success

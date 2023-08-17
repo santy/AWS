@@ -1,0 +1,13 @@
+{
+  "Id": "Policy1692260784458",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1692260328337",
+      "Action": "sqs:*",
+      "Effect": "Allow",
+      "Resource": "arn:aws:sqs:us-east-1:565061563375:NotificacionS3",
+      "Principal": "*"
+    }
+  ]
+}

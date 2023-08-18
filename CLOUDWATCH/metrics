@@ -1,6 +1,8 @@
+### Añadir métrica con namespace MyNameSpace
+
 aws cloudwatch put-metric-data --metric-name Buffers --namespace MyNameSpace --unit Bytes --value 231434333 --dimensions InstanceId=1-23456789,InstanceType=m1.small
 
 
-Disparar alarma, se debe crear antes una alarma con metríca de TerminateInstance
+### Disparar alarma, se debe crear antes una alarma con metríca de TerminateInstance
 
 aws cloudwatch set-alarm-state --alarm-name Alarm --state-value ALARM --state-reason "testing purposes"

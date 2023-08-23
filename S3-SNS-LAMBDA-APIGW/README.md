@@ -5,4 +5,5 @@ https://waqas-ahmed.medium.com/manage-job-application-using-aws-free-service-579
 ### Boto3 SDK AWS Links
 
 https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
 https://aws.amazon.com/es/sdk-for-python/

@@ -1,0 +1,15 @@
+nano pairkey.pem
+
+pegar PRIVATE KEY de AWS Academy o key pair al lanzar la instancia
+
+-----BEGIN RSA PRIVATE KEY----- 
+  
+   /**chorizo numeros**/ 
+  
+  ---END RSA PRIVATE KEY-----
+
+guardar archivo y dar permisos  
+
+chmod 0400 pairkey.pem
+
+ssh ec2-user@ip.com -i pairkey.pem

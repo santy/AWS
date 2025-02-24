@@ -19,5 +19,9 @@ aws kinesis describe-stream --stream-name test
 
 # Consume some data
 aws kinesis get-shard-iterator --stream-name test --shard-id shardId-000000000000 --shard-iterator-type TRIM_HORIZON
+{
+    "ShardIterator": "AAAAAAAAAAExs9gIfT4qe8E/j0i/lfbjyhVBktSKkrc96x/wVsZqMGY7ZkYERUAeuoUklfkIQfD19rB3Wu3lZV6ejRLmHnIaFGBp+qF4eQ/kFNR1bftfds4pif/NnyBR5VWUMXIDkwvumjQuLKKb9hzmwCrbzYk30IM0JTz5bE3fiWYwVlGsRcW9pp2ng8UFTOb7P+QBu9tFfIq2kntHorZdHRNU0WoBvcsfaogpK8zdgtikLFbDKg=="
+}
 
-aws kinesis get-records --shard-iterator <>
+
+aws kinesis get-records --shard-iterator "AAAAAAAAAAExs9gIfT4qe8E/j0i/lfbjyhVBktSKkrc96x/wVsZqMGY7ZkYERUAeuoUklfkIQfD19rB3Wu3lZV6ejRLmHnIaFGBp+qF4eQ/kFNR1bftfds4pif/NnyBR5VWUMXIDkwvumjQuLKKb9hzmwCrbzYk30IM0JTz5bE3fiWYwVlGsRcW9pp2ng8UFTOb7P+QBu9tFfIq2kntHorZdHRNU0WoBvcsfaogpK8zdgtikLFbDKg=="
